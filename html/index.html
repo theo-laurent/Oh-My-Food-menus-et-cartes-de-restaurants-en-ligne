@@ -4,11 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil - oh my food</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -17,11 +13,10 @@
     </header>
     <!--MAIN-->
     <main>
-      <section class="localisation">
-        <h3 hidden>Map</h3>
+      <div class="localisation">
         <i></i>
         <p>Paris, Belleville</p>
-      </section>
+      </div>
 
       <section class="accueil">
         <h2>Réservez le menu qui vous convient</h2>
@@ -33,7 +28,7 @@
 
       <section class="selection">
         <h2>Fonctionnement</h2>
-        <div>
+        <div class="selection__liste">
           <ol>
             <li>
               <i></i>
@@ -53,42 +48,42 @@
 
       <section class="restaurants">
         <h2>Restaurants</h2>
-        <div>
-          <a href="" class="">
+        <div class="restaurants__container">
+          <a href="" class="restaurants__container__card">
             <figure>
               <img src="images/lapalettedugout.jpg" />
               <figcaption>
-                <h3>La palette du goût</h3>
+                <h4>La palette du goût</h4>
                 <p>Ménilmontant</p>
               </figcaption>
             </figure>
           </a>
 
-          <a href="" class="">
+          <a href="" class="restaurants__container__card">
             <figure>
               <img src="images/lanoteenchantee.jpg" />
               <figcaption>
-                <h3>La note enchantée</h3>
+                <h4>La note enchantée</h4>
                 <p>Charonne</p>
               </figcaption>
             </figure>
           </a>
 
-          <a href="" class="">
+          <a href="" class="restaurants__container__card">
             <figure>
               <img src="images/alafrançaise.jpg" />
               <figcaption>
-                <h3>À la française</h3>
+                <h4>À la française</h4>
                 <p>Cité Rouge</p>
               </figcaption>
             </figure>
           </a>
 
-          <a href="" class="">
+          <a href="" class="restaurants__container__card">
             <figure>
               <img src="images/ledelicedessens.jpg" />
               <figcaption>
-                <h3>Le délice des sens</h3>
+                <h4>Le délice des sens</h4>
                 <p>Folie-Méricourt</p>
               </figcaption>
             </figure>
@@ -98,7 +93,7 @@
     </main>
     <!--FOOTER-->
     <footer>
-      <h3>ohmyfood</h3>
+      <h5>ohmyfood</h5>
       <ul>
         <li>Proposer un restaurant</li>
         <li>Devenir partenaire</li>

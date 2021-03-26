@@ -1,0 +1,23 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theo-laurent/Projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theo-laurent/Projet-3/issues"
+  },
+  "homepage": "https://github.com/theo-laurent/Projet-3#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.32.8"
+  }
+}
