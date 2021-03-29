@@ -1,6 +1,6 @@
 @import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 
 * {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -27,15 +27,19 @@ body {
   padding: 0;
   img {
     width: 100%;
+    height: 230px;
+    object-fit: cover;
   }
 }
 
 header {
-  margin: 10px;
-
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   a {
     position: absolute;
-    top: 25px;
+    top: 28px;
     left: 5%;
   }
   h1 {
@@ -78,29 +82,31 @@ main {
     margin-bottom: 50px;
     .menu__sousmenu__card {
       background-color: #fff;
-      height: 55px;
+      height: 45px;
       margin-bottom: 15px;
       border-radius: 15px;
-      line-height: 1.5;
-      padding: 15px 15px 15px 15px;
+      padding: 10px 10px 10px 10px;
+
       .menu__sousmenu__card__grid {
         height: 100%;
         display: grid;
         grid-template-columns: 90% 10%;
+        align-items: center;
       }
       .menu__sousmenu_card__grid_intitulé {
         grid-column: 1/1;
         font-size: 0.9rem;
+        font-weight: 300;
+        margin: 0;
       }
       .menu__sousmenu__card__grid__prix {
         grid-column: 2/2;
         font-weight: bold;
+        margin: 0;
       }
       h4 {
         margin: 0;
-      }
-      p {
-        margin-top: 10px;
+        font-weight: 1000;
       }
     }
   }
@@ -129,6 +135,7 @@ footer {
   color: white;
   h5 {
     margin-bottom: 0;
+    font-size: 1.5rem;
   }
   ul {
     padding: 0;
