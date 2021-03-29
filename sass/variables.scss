@@ -6,3 +6,16 @@ $color-grey: #3a3a3a;
 @mixin padding-léger {
   padding: 0 10% 0 10%;
 }
+
+@mixin button {
+  width: 50%;
+  margin: auto;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background: linear-gradient($color-secondary, $color-primary);
+  color: white;
+}
