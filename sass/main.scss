@@ -5,7 +5,8 @@
 * {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   h1,
-  h2 {
+  h2,
+  h5 {
     font-family: "Shrikhand";
   }
   h3 {
@@ -77,45 +78,68 @@ main {
     margin-bottom: 50px;
     .menu__sousmenu__card {
       background-color: #fff;
-      height: 75px;
+      height: 55px;
       margin-bottom: 15px;
       border-radius: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       line-height: 1.5;
-      padding: 0 15px 0 15px;
+      padding: 15px 15px 15px 15px;
+      .menu__sousmenu__card__grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 90% 10%;
+      }
+      .menu__sousmenu_card__grid_intitulé {
+        grid-column: 1/1;
+        font-size: 0.9rem;
+      }
+      .menu__sousmenu__card__grid__prix {
+        grid-column: 2/2;
+        font-weight: bold;
+      }
       h4 {
         margin: 0;
       }
       p {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-      }
-      span {
-        font-weight: bold;
+        margin-top: 10px;
       }
     }
   }
-}
-
-.btncommande {
-  width: 50%;
-  height: 45px;
-  margin: auto;
-  margin-top: -20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  border-radius: 25px;
-  background: linear-gradient($color-secondary, $color-primary);
-  color: white;
+  .menu__btn {
+    width: 50%;
+    height: 45px;
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: white;
+  }
 }
 
 footer {
   margin-top: 70px;
   background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  line-height: 1.5;
   color: white;
+  h5 {
+    margin-bottom: 0;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      a,
+      i {
+        text-decoration: none;
+        color: white;
+        margin-right: 15px;
+      }
+    }
+  }
 }
