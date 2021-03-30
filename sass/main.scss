@@ -5,7 +5,6 @@
 * {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   h1,
-  h2,
   h5 {
     font-family: "Shrikhand";
   }
@@ -33,6 +32,9 @@ body {
     height: 230px;
     object-fit: cover;
   }
+  h2 {
+    margin-left: 20px;
+  }
 }
 
 header {
@@ -57,9 +59,6 @@ header {
 
 main {
   background-color: #fff;
-  border-radius: 25px 25px 0 0;
-  position: relative;
-  margin-top: -50px;
   .localisation {
     background-color: #eaeaea;
     height: 50px;
@@ -87,10 +86,51 @@ main {
       @include padding-léger;
     }
   }
+  .selection {
+    margin-top: 40px;
+    .selection__liste {
+      ol {
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        li {
+          background-color: #f6f6f6;
+          width: 90%;
+          height: 70px;
+          border-radius: 25px;
+          display: flex;
+          align-items: center;
+          p {
+            padding-left: 7%;
+          }
+          i {
+            margin-left: 25px;
+            font-size: 1.2rem;
+          }
+          span {
+            position: relative;
+            left: -10px;
+            background-color: $color-primary;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 .restaurants {
   background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
   .restaurants__container {
     display: flex;
     flex-direction: column;
@@ -107,9 +147,23 @@ main {
         height: 75px;
         display: grid;
         grid-template-rows: 50% 50%;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 85% 15%;
         align-items: center;
         padding-left: 20px;
+        span {
+          position: relative;
+          width: 90px;
+          height: 30px;
+          background-color: $color-tertiary;
+          color: darken($color-tertiary, 40%);
+          right: 70px;
+          bottom: 160px;
+          border-radius: 3px;
+          font-weight: 500;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         h4 {
           grid-column: 1/1;
           grid-row: 1/1;
@@ -120,7 +174,10 @@ main {
           margin-top: -5px;
         }
         i {
+          grid-row: 1/1;
           align-self: flex-end;
+          font-size: 1.5rem;
+          font-weight: 100;
         }
       }
       img {
@@ -133,8 +190,13 @@ main {
 }
 
 .menu {
+  h2 {
+    font-family: "Shrikhand";
+  }
   background-color: #f6f6f6;
-  margin-top: 0px;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -50px;
   .menu__title {
     font-size: 1.2rem;
     display: flex;
@@ -190,7 +252,8 @@ footer {
   color: white;
   h5 {
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
   }
   ul {
     padding: 0;
