@@ -1,0 +1,54 @@
+
+
+.menu {
+    background-color: #f6f6f6;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    margin-top: -50px;
+    h2 {
+      font-family: "Shrikhand";
+    }
+    .menu__btn {
+      @include button;
+      margin-bottom: 50px;
+    }
+    .menu__title {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .menu__sousmenu {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+      .menu__sousmenu__card {
+        background-color: #fff;
+        height: 45px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        .menu__sousmenu__card__grid {
+          height: 100%;
+          display: grid;
+          grid-template-columns: 90% 10%;
+          align-items: c;
+        }
+        .menu__sousmenu_card__grid_intitulé {
+          grid-column: 1/1;
+          font-size: 0.9rem;
+          font-weight: 300;
+          margin: 0;
+        }
+        .menu__sousmenu__card__grid__prix {
+          grid-column: 2/2;
+          font-weight: bold;
+          margin: 0;
+        }
+        h4 {
+          margin: 0;
+          font-weight: 1000;
+        }
+      }
+    }
+  }
