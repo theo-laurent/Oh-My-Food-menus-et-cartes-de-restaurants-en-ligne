@@ -1,0 +1,22 @@
+.loader {
+  :nth-child(1) {
+    color: $color-primary;
+    animation: opacity 2s;
+  }
+  :nth-child(2) {
+    color: $color-secondary;
+    animation: opacity 8s;
+  }
+  :nth-child(3) {
+    color: $color-mix;
+    animation:opacity 14s;
+  }
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
