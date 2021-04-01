@@ -10,6 +10,9 @@
     <span>Oh</span>
     <span>my</span>
     <span>food</span>
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
   <body>
     <!--HEADER-->
@@ -36,19 +39,27 @@
         <div class="selection__liste">
           <ol>
             <li>
-              <span>1</span>
-              <i class="fas fa-mobile-alt"></i>
-              <p>Choisissez un restaurant</p>
+              <a href="">
+                <span>1</span>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+              </a>
             </li>
+
             <li>
-              <span>2</span>
-              <i class="fas fa-list-ul"></i>
-              <p>Composez votre menu</p>
+              <a href="">
+                <span>2</span>
+                <i class="fas fa-list-ul"></i>
+                <p>Composez votre menu</p>
+              </a>
             </li>
+
             <li>
-              <span>3</span>
-              <i class="fas fa-store"></i>
-              <p>Dégustez au restaurant</p>
+              <a href="">
+                <span>3</span>
+                <i class="fas fa-store"></i>
+                <p>Dégustez au restaurant</p>
+              </a>
             </li>
           </ol>
         </div>
@@ -57,48 +68,64 @@
       <section class="restaurants">
         <h2>Restaurants</h2>
         <div class="restaurants__container">
-          <a href="/menus/menu-lapalettedugout.html" class="restaurants__container__card">
+          <a
+            href="/menus/menu-lapalettedugout.html"
+            class="restaurants__container__card"
+          >
             <figure>
               <img src="menus/images/lapalettedugout.jpg" />
               <figcaption>
-                <span>Nouveau</span>
+                <span class="nouveau">Nouveau</span>
                 <h4>La palette du goût</h4>
                 <p>Ménilmontant</p>
-                <i class="far fa-heart"></i>
+                <i class="coeur1 far fa-heart"></i>
+                <i class="coeur2 fas fa-heart"></i>
               </figcaption>
             </figure>
           </a>
 
-          <a href="/menus/menu-lanoteenchantee.html" class="restaurants__container__card">
+          <a
+            href="/menus/menu-lanoteenchantee.html"
+            class="restaurants__container__card"
+          >
             <figure>
               <img src="menus/images/lanoteenchantee.jpg" />
               <figcaption>
-                <span>Nouveau</span>
+                <span class="nouveau">Nouveau</span>
                 <h4>La note enchantée</h4>
                 <p>Charonne</p>
-                <i class="far fa-heart"></i>
+                <i class="coeur1 far fa-heart"></i>
+                <i class="coeur2 fas fa-heart"></i>
               </figcaption>
             </figure>
           </a>
 
-          <a href="/menus/menu-alafrançaise.html" class="restaurants__container__card">
+          <a
+            href="/menus/menu-alafrançaise.html"
+            class="restaurants__container__card"
+          >
             <figure>
               <img src="menus/images/alafrançaise.jpg" />
               <figcaption>
                 <h4>À la française</h4>
                 <p>Cité Rouge</p>
-                <i class="far fa-heart"></i>
+                <i class="coeur1 far fa-heart"></i>
+                <i class="coeur2 fas fa-heart"></i>
               </figcaption>
             </figure>
           </a>
 
-          <a href="/menus/menu-ledelicedessens.html" class="restaurants__container__card">
+          <a
+            href="/menus/menu-ledelicedessens.html"
+            class="restaurants__container__card"
+          >
             <figure>
               <img src="menus/images/ledelicedessens.jpg" />
               <figcaption>
                 <h4>Le délice des sens</h4>
                 <p>Folie-Méricourt</p>
-                <i class="far fa-heart"></i>
+                <i class="coeur1 far fa-heart"></i>
+                <i class="coeur2 fas fa-heart"></i>
               </figcaption>
             </figure>
           </a>
@@ -109,9 +136,15 @@
     <footer>
       <h5>ohmyfood</h5>
       <ul>
-        <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</li>
-        <li>Mentions légales</li>
+        <li>
+          <a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href=""
+            ><i class="fas fa-hands-helping fa-xs"></i>Devenir partenaire</a
+          >
+        </li>
+        <li><a href="">Mentions légales</a></li>
         <li><a href="mailto:emailtest@exemple.com">Contact</a></li>
       </ul>
     </footer>

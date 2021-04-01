@@ -8,10 +8,13 @@ $color-mix: #750f57;
   padding: 0 10% 0 10%;
 }
 
+@mixin shadow {
+  box-shadow: 0px 10px 20px #cccccc;
+}
+
 @mixin button {
   width: 50%;
-  margin: auto;
-  height: 45px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +22,7 @@ $color-mix: #750f57;
   border-radius: 25px;
   background: linear-gradient($color-secondary, $color-primary);
   color: white;
+  @include shadow;
 }
 
 @mixin numerostuto {
@@ -30,4 +34,41 @@ $color-mix: #750f57;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (min-width: 651px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin footertabmobile {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin taillecoeur {
+  font-size: 1.5rem;
+  @include tablette {
+    font-size: 1.8rem;
+  }
+  @include desktop {
+    font-size: 2rem;
+  }
+}
+
+@mixin boule {
+  margin-left: 15px;
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  animation: jump2 1500ms;
+  animation-iteration-count: infinite;
 }

@@ -1,22 +1,68 @@
-.loader {
-  :nth-child(1) {
-    color: $color-primary;
-    animation: opacity 2s;
+@keyframes loader {
+  75% {
+    opacity: 1;
   }
-  :nth-child(2) {
-    color: $color-secondary;
-    animation: opacity 8s;
+
+  100% {
+    opacity: 0;
   }
-  :nth-child(3) {
-    color: $color-mix;
-    animation:opacity 14s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
   }
-  @keyframes opacity {
-    from {
+  25% {
+    transform: translateY(30px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump2 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.nouveau {
+  animation: alertenouveau 3500ms ease-in-out;
+  animation-iteration-count: infinite;
+  @keyframes alertenouveau {
+    0% {
       opacity: 0;
     }
-    to {
+    25% {
       opacity: 1;
     }
+
+    50% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
   }
+}
+
+.coeur1:hover {
+  transition: 1500ms;
+  opacity: 0;
 }

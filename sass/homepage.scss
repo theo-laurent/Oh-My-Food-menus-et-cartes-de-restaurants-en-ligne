@@ -1,5 +1,3 @@
-
-
 .localisation {
   background-color: #eaeaea;
   height: 50px;
@@ -10,47 +8,82 @@
   p {
     padding-left: 15px;
     margin: 0;
+    @include desktop {
+      font-size: 1.4rem;
+    }
   }
 }
 
 .accueil {
+  display: flex;
+  flex-direction: column;
+
   background-color: #f6f6f6;
   @include padding-léger;
-  height: 250px;
+  height: 230px;
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: space-evenly;
   .accueil__btn {
     @include button;
-    width: 80%;
+    width: 70%;
+    @include desktop {
+      width: 300px;
+    }
   }
   h2 {
     margin: 0;
-    @include padding-léger;
+    font-size: 1.8rem;
+    @include desktop {
+      font-size: 2.2rem;
+    }
+  }
+  p {
+    @include desktop {
+      font-size: 1.5rem;
+    }
   }
 }
 
 .selection {
   background-color: #fff;
   padding-top: 40px;
+  padding-bottom: 40px;
   .selection__liste {
     ol {
       height: 280px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      li {
+      list-style: none;
+      @include desktop {
+        flex-direction: row;
+        height: 60px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 550;
         background-color: #f6f6f6;
         width: 90%;
         height: 70px;
         border-radius: 25px;
         display: flex;
         align-items: center;
+        @include shadow;
+        @include desktop {
+          width: 300px;
+        }
+
         p {
-          padding-left: 7%;
+          padding-left: 8%;
         }
         i {
           margin-left: 25px;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
         span {
           @include numerostuto;
@@ -63,45 +96,57 @@
 }
 
 .restaurants {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
   .restaurants__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
     .restaurants__container__card {
-      height: 250px;
+      height: 270px;
       width: 90%;
-      margin: auto;
       margin-bottom: 25px;
       background-color: white;
       border-radius: 25px;
       text-decoration: none;
       color: black;
+      @include shadow;
+      @include desktop {
+        width: 40%;
+      }
       img {
         border-radius: 25px 25px 0 0;
         width: 100%;
-        height: 170px;
+        height: 200px;
       }
       figcaption {
         height: 75px;
         display: grid;
         grid-template-rows: 50% 50%;
-        grid-template-columns: 85% 15%;
+        grid-template-columns: 88% 12%;
         align-items: center;
         padding-left: 20px;
+        position: relative;
         span {
-          position: relative;
-          width: 90px;
-          height: 30px;
+          position: absolute;
+          width: 27%;
+          height: 45%;
           background-color: $color-tertiary;
           color: darken($color-tertiary, 40%);
-          right: 70px;
-          bottom: 160px;
+          right: 10px;
+          bottom: 230px;
           border-radius: 3px;
           font-weight: 500;
           display: flex;
           justify-content: center;
           align-items: center;
+          @include desktop {
+          }
         }
         h4 {
           grid-column: 1/1;
@@ -112,11 +157,20 @@
           grid-row: 2/2;
           margin-top: -5px;
         }
-        i {
-          grid-row: 1/1;
-          align-self: flex-end;
-          font-size: 1.5rem;
-          font-weight: 100;
+        .coeur1 {
+          width: 30px;
+          position: relative;
+          top: 10px;
+          @include taillecoeur;
+          z-index: 2;
+          background-color: white;
+        }
+        .coeur2 {
+          position: relative;
+          bottom: 27px;
+          @include taillecoeur;
+          z-index: 1;
+          color:  #ac49c0;
         }
       }
     }
