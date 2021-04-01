@@ -1,11 +1,9 @@
-@keyframes loader {
-  75% {
-    opacity: 1;
-  }
+/*Début animation*/
 
+@keyframes loader {
   100% {
     opacity: 0;
-    z-index: -100;
+    z-index: -1000;
   }
 }
 
