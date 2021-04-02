@@ -260,7 +260,6 @@ footer ul li:hover {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
-  font-weight: 550;
   background-color: #f6f6f6;
   width: 90%;
   height: 70px;
@@ -553,7 +552,6 @@ footer ul li:hover {
 }
 .menu .menu__sousmenu .menu__sousmenu__card h4 {
   margin: 0;
-  font-weight: 1000;
 }
 
 /*Début animation*/
