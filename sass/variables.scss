@@ -3,13 +3,15 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $color-grey: #3a3a3a;
 $color-mix: #750f57;
+$colorbtn: linear-gradient($color-secondary, $color-primary);
+$colorbtnhover: linear-gradient(#ff93e1, #a16be0);
 
 @mixin padding-léger {
   padding: 0 10% 0 10%;
 }
 
 @mixin shadow {
-  box-shadow: 0px 10px 20px #cccccc;
+  box-shadow: 0px 10px 20px #aaa8a8;
 }
 
 @mixin button {
@@ -20,9 +22,13 @@ $color-mix: #750f57;
   align-items: center;
   text-decoration: none;
   border-radius: 25px;
-  background: linear-gradient($color-secondary, $color-primary);
+  background: $colorbtn;
   color: white;
   @include shadow;
+  &:hover {
+    background: $colorbtnhover;
+    box-shadow: 5px 10px 20px #929191;
+  }
 }
 
 @mixin numerostuto {
@@ -47,7 +53,6 @@ $color-mix: #750f57;
     @content;
   }
 }
-
 
 @mixin footertabmobile {
   display: flex;
@@ -82,16 +87,15 @@ $color-mix: #750f57;
 }
 
 @mixin coeur3 {
-  width: 30px;
+  text-align: center;
   position: absolute;
   top: 35px;
   right: 7%;
   @include taillecoeur;
   z-index: 2;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   cursor: pointer;
 }
-
 
 @mixin coeur4 {
   position: absolute;
@@ -100,9 +104,6 @@ $color-mix: #750f57;
   @include taillecoeur;
   z-index: 1;
   color: #ac49c0;
-  @include desktop(){
-    right: 6.8%;
-  }
 }
 
 @mixin boule {
@@ -115,9 +116,9 @@ $color-mix: #750f57;
   animation-iteration-count: infinite;
 }
 
-@mixin animationmenu{
+@mixin animationmenu {
   :nth-child(2) {
-    animation: 600ms hello ease-in
+    animation: 600ms hello ease-in;
   }
   :nth-child(3) {
     animation: 1200ms hello ease-out;

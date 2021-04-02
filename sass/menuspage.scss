@@ -35,6 +35,10 @@
     align-items: center;
     .coeur3 {
       @include coeur3;
+      &:hover {
+        transition: 1500ms;
+        opacity: 0;
+      }
     }
     .coeur4 {
       @include coeur4;

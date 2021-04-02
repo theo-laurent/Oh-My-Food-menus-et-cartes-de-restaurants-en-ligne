@@ -17,7 +17,6 @@
 .accueil {
   display: flex;
   flex-direction: column;
-
   background-color: #f6f6f6;
   @include padding-léger;
   height: 230px;
@@ -90,6 +89,12 @@
           left: -10px;
         }
       }
+      .lispe {
+        background-color: lighten($color-primary, 33%);
+        i {
+          color: $color-primary;
+        }
+      }
     }
   }
 }
@@ -158,6 +163,10 @@
         }
         .coeur1 {
           @include coeur1;
+          &:hover {
+            transition: 1500ms;
+            opacity: 0;
+          }
         }
         .coeur2 {
           @include coeur2;
