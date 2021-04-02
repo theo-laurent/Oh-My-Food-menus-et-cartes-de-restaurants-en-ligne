@@ -62,7 +62,7 @@
         flex-direction: row;
         height: 60px;
       }
-      a {
+      li {
         text-decoration: none;
         color: black;
         font-size: 1.1rem;
@@ -158,19 +158,10 @@
           margin-top: -5px;
         }
         .coeur1 {
-          width: 30px;
-          position: relative;
-          top: 10px;
-          @include taillecoeur;
-          z-index: 2;
-          background-color: white;
+          @include coeur1;
         }
         .coeur2 {
-          position: relative;
-          bottom: 27px;
-          @include taillecoeur;
-          z-index: 1;
-          color:  #ac49c0;
+          @include coeur2;
         }
       }
     }

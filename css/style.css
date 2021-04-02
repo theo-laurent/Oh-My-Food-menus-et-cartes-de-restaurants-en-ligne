@@ -32,6 +32,11 @@ body img {
   height: 230px;
   object-fit: cover;
 }
+@media screen and (min-width: 1025px) {
+  body img {
+    height: 350px;
+  }
+}
 body h2 {
   margin-left: 7%;
 }
@@ -251,7 +256,7 @@ footer ul li:hover {
     height: 60px;
   }
 }
-.selection .selection__liste ol a {
+.selection .selection__liste ol li {
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
@@ -265,18 +270,18 @@ footer ul li:hover {
   box-shadow: 0px 10px 20px #cccccc;
 }
 @media screen and (min-width: 1025px) {
-  .selection .selection__liste ol a {
+  .selection .selection__liste ol li {
     width: 300px;
   }
 }
-.selection .selection__liste ol a p {
+.selection .selection__liste ol li p {
   padding-left: 8%;
 }
-.selection .selection__liste ol a i {
+.selection .selection__liste ol li i {
   margin-left: 25px;
   font-size: 1.3rem;
 }
-.selection .selection__liste ol a span {
+.selection .selection__liste ol li span {
   background-color: #9356dc;
   border-radius: 50%;
   width: 22px;
@@ -399,8 +404,32 @@ footer ul li:hover {
   position: relative;
   margin-top: -50px;
 }
+@media screen and (min-width: 1025px) {
+  .menu {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 60% 20%;
+    justify-items: center;
+    align-items: center;
+  }
+  .menu :nth-child(2) {
+    animation: 600ms hello ease-in;
+  }
+  .menu :nth-child(3) {
+    animation: 1200ms hello ease-out;
+  }
+  .menu :nth-child(4) {
+    animation: 1800ms hello ease-out;
+  }
+}
 .menu h2 {
   font-family: "Shrikhand";
+}
+@media screen and (min-width: 1025px) {
+  .menu h2 {
+    padding-right: 50px;
+  }
 }
 .menu .menu__btn {
   width: 50%;
@@ -417,16 +446,87 @@ footer ul li:hover {
   margin: auto;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1025px) {
+  .menu .menu__btn {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    margin: 0;
+  }
+}
 .menu .menu__title {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+.menu .menu__title .coeur3 {
+  width: 30px;
+  position: absolute;
+  top: 35px;
+  right: 7%;
+  font-size: 1.5rem;
+  z-index: 2;
+  background-color: #F6F6F6;
+  cursor: pointer;
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  .menu .menu__title .coeur3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu__title .coeur3 {
+    font-size: 2rem;
+  }
+}
+.menu .menu__title .coeur4 {
+  position: absolute;
+  right: 7%;
+  top: 35px;
+  font-size: 1.5rem;
+  z-index: 1;
+  color: #ac49c0;
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  .menu .menu__title .coeur4 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu__title .coeur4 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu__title .coeur4 {
+    right: 6.8%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu__title {
+    grid-row: 1/1;
+    grid-column: 2/3;
+    white-space: nowrap;
+  }
 }
 .menu .menu__sousmenu {
   width: 90%;
   margin: auto;
   margin-bottom: 50px;
+}
+.menu .menu__sousmenu :nth-child(2) {
+  animation: 600ms hello ease-in;
+}
+.menu .menu__sousmenu :nth-child(3) {
+  animation: 1200ms hello ease-out;
+}
+.menu .menu__sousmenu :nth-child(4) {
+  animation: 1800ms hello ease-out;
+}
+@media screen and (min-width: 1025px) {
+  .menu .menu__sousmenu {
+    grid-row: 2/2;
+    margin: 0;
+  }
 }
 .menu .menu__sousmenu .menu__sousmenu__card {
   background-color: #fff;
@@ -439,7 +539,6 @@ footer ul li:hover {
   height: 100%;
   display: grid;
   grid-template-columns: 90% 10%;
-  align-items: c;
 }
 .menu .menu__sousmenu .menu__sousmenu__card .menu__sousmenu_card__grid_intitulé {
   grid-column: 1/1;
@@ -511,9 +610,22 @@ footer ul li:hover {
   }
 }
 
-.coeur1:hover {
+.coeur1:hover,
+.coeur3:hover {
   transition: 1500ms;
   opacity: 0;
+}
+
+@keyframes hello {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

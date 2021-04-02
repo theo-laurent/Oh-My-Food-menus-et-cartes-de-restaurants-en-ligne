@@ -48,6 +48,7 @@ $color-mix: #750f57;
   }
 }
 
+
 @mixin footertabmobile {
   display: flex;
   justify-content: space-evenly;
@@ -63,6 +64,47 @@ $color-mix: #750f57;
   }
 }
 
+@mixin coeur1 {
+  width: 30px;
+  position: relative;
+  top: 10px;
+  @include taillecoeur;
+  z-index: 2;
+  background-color: white;
+}
+
+@mixin coeur2 {
+  position: relative;
+  bottom: 27px;
+  @include taillecoeur;
+  z-index: 1;
+  color: #ac49c0;
+}
+
+@mixin coeur3 {
+  width: 30px;
+  position: absolute;
+  top: 35px;
+  right: 7%;
+  @include taillecoeur;
+  z-index: 2;
+  background-color: #F6F6F6;
+  cursor: pointer;
+}
+
+
+@mixin coeur4 {
+  position: absolute;
+  right: 7%;
+  top: 35px;
+  @include taillecoeur;
+  z-index: 1;
+  color: #ac49c0;
+  @include desktop(){
+    right: 6.8%;
+  }
+}
+
 @mixin boule {
   margin-left: 15px;
   background-color: black;
@@ -71,4 +113,16 @@ $color-mix: #750f57;
   border-radius: 5px;
   animation: jump2 1500ms;
   animation-iteration-count: infinite;
+}
+
+@mixin animationmenu{
+  :nth-child(2) {
+    animation: 600ms hello ease-in
+  }
+  :nth-child(3) {
+    animation: 1200ms hello ease-out;
+  }
+  :nth-child(4) {
+    animation: 1800ms hello ease-out;
+  }
 }
