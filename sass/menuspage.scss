@@ -36,7 +36,7 @@
     .coeur3 {
       @include coeur3;
       &:hover {
-        transition: 1500ms;
+        transition: 750ms;
         opacity: 0;
       }
     }
@@ -60,29 +60,64 @@
     }
     .menu__sousmenu__card {
       background-color: #fff;
-      height: 45px;
+      height: 65px;
+      padding-left: 20px;
+
       margin-bottom: 15px;
       border-radius: 15px;
-      padding: 10px 10px 10px 10px;
+      display: flex;
 
+      &:hover {
+        cursor: pointer;
+        .menu__sousmenu__card__check {
+          display: flex;
+          animation: check 0.5s forwards;
+        }
+        i {
+          animation: rotate 0.75s;
+        }
+      }
       .menu__sousmenu__card__grid {
+        width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 50% 40%;
+        align-items: center;
+        .menu__sousmenu_card__grid_intitulé {
+          grid-column: 1/1;
+          font-size: 1rem;
+          font-weight: 400;
+          margin: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-right: 10px;
+        }
+        .menu__sousmenu__card__grid__prix {
+          grid-column: 2/2;
+          font-weight: bold;
+          margin: 0;
+        }
+        h4 {
+          margin: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
-      .menu__sousmenu_card__grid_intitulé {
-        grid-column: 1/1;
-        font-size: 0.9rem;
-        font-weight: 300;
-        margin: 0;
-      }
-      .menu__sousmenu__card__grid__prix {
-        grid-column: 2/2;
-        font-weight: bold;
-        margin: 0;
-      }
-      h4 {
-        margin: 0;
+      .menu__sousmenu__card__check {
+        width: 25%;
+        background-color: #8edec9;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        i {
+          color: white;
+        }
       }
     }
   }

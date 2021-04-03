@@ -164,7 +164,7 @@
         .coeur1 {
           @include coeur1;
           &:hover {
-            transition: 1500ms;
+            transition: 750ms;
             opacity: 0;
           }
         }
