@@ -67,7 +67,7 @@
       border-radius: 15px;
       display: flex;
 
-      &:hover {
+      &:hover,&:active {
         cursor: pointer;
         .menu__sousmenu__card__check {
           display: flex;

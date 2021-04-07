@@ -568,14 +568,14 @@ footer ul li:hover {
   border-radius: 15px;
   display: flex;
 }
-.menu .menu__sousmenu .menu__sousmenu__card:hover {
+.menu .menu__sousmenu .menu__sousmenu__card:hover, .menu .menu__sousmenu .menu__sousmenu__card:active {
   cursor: pointer;
 }
-.menu .menu__sousmenu .menu__sousmenu__card:hover .menu__sousmenu__card__check {
+.menu .menu__sousmenu .menu__sousmenu__card:hover .menu__sousmenu__card__check, .menu .menu__sousmenu .menu__sousmenu__card:active .menu__sousmenu__card__check {
   display: flex;
   animation: check 0.5s forwards;
 }
-.menu .menu__sousmenu .menu__sousmenu__card:hover i {
+.menu .menu__sousmenu .menu__sousmenu__card:hover i, .menu .menu__sousmenu .menu__sousmenu__card:active i {
   animation: rotate 0.75s;
 }
 .menu .menu__sousmenu .menu__sousmenu__card .menu__sousmenu__card__grid {
