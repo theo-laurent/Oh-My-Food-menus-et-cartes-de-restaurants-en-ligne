@@ -451,6 +451,9 @@ footer ul li:hover {
   .menu :nth-child(4) {
     animation: 1800ms hello ease-out;
   }
+  .menu :nth-child(5) {
+    animation: 2400ms hello ease-out;
+  }
 }
 .menu h2 {
   font-family: "Shrikhand";
@@ -554,6 +557,9 @@ footer ul li:hover {
 .menu .menu__sousmenu :nth-child(4) {
   animation: 1800ms hello ease-out;
 }
+.menu .menu__sousmenu :nth-child(5) {
+  animation: 2400ms hello ease-out;
+}
 @media screen and (min-width: 1025px) {
   .menu .menu__sousmenu {
     grid-row: 2/2;
@@ -568,14 +574,14 @@ footer ul li:hover {
   border-radius: 15px;
   display: flex;
 }
-.menu .menu__sousmenu .menu__sousmenu__card:hover, .menu .menu__sousmenu .menu__sousmenu__card:active {
+.menu .menu__sousmenu .menu__sousmenu__card:hover {
   cursor: pointer;
 }
-.menu .menu__sousmenu .menu__sousmenu__card:hover .menu__sousmenu__card__check, .menu .menu__sousmenu .menu__sousmenu__card:active .menu__sousmenu__card__check {
+.menu .menu__sousmenu .menu__sousmenu__card:hover .menu__sousmenu__card__check {
   display: flex;
   animation: check 0.5s forwards;
 }
-.menu .menu__sousmenu .menu__sousmenu__card:hover i, .menu .menu__sousmenu .menu__sousmenu__card:active i {
+.menu .menu__sousmenu .menu__sousmenu__card:hover i {
   animation: rotate 0.75s;
 }
 .menu .menu__sousmenu .menu__sousmenu__card .menu__sousmenu__card__grid {

@@ -126,4 +126,7 @@ $colorbtnhover: linear-gradient(#ff93e1, #a16be0);
   :nth-child(4) {
     animation: 1800ms hello ease-out;
   }
+  :nth-child(5){
+    animation:2400ms hello ease-out;
+  }
 }
