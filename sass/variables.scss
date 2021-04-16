@@ -118,7 +118,7 @@ $colorbtnhover: linear-gradient(#ff93e1, #a16be0);
 
 @mixin animationmenu {
   :nth-child(2) {
-    animation: 600ms hello ease-in;
+    animation: 600ms hello ease-out;
   }
   :nth-child(3) {
     animation: 1200ms hello ease-out;
@@ -126,7 +126,7 @@ $colorbtnhover: linear-gradient(#ff93e1, #a16be0);
   :nth-child(4) {
     animation: 1800ms hello ease-out;
   }
-  :nth-child(5){
-    animation:2400ms hello ease-out;
+  :nth-child(5) {
+    animation: 2400ms hello ease-out;
   }
 }
