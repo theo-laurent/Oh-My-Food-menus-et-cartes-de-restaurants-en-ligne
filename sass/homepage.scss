@@ -88,11 +88,12 @@
           position: relative;
           left: -10px;
         }
-      }
-      .lispe {
-        background-color: #F5EDFF;
-        i {
-          color: $color-primary;
+        &:hover {
+          cursor: pointer;
+          background-color: #f5edff;
+          i {
+            color: $color-primary;
+          }
         }
       }
     }
